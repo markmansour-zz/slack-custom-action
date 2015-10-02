@@ -1,0 +1,37 @@
+{
+    "category": "Deploy",
+    "provider": "Slack-Notifier",
+    "version": "1",
+    "configurationProperties": [
+        {
+            "description": "Channel name",
+            "key": true,
+            "name": "ChannelName",
+            "queryable": false,
+            "required": true,
+            "secret": false,
+            "type": "String"
+        },
+        {
+            "description": "Team URL",
+            "key": true,
+            "name": "TeamUrl",
+            "queryable": false,
+            "required": true,
+            "secret": false,
+            "type": "String"
+        }
+    ],
+    "settings": {
+	"entityUrlTemplate": "https://{TeamUrl}.slack.com/messages/{ChannelName}/",
+	"executionUrlTemplate": "https://{TeamUrl}.slack.com/archives/{ChannelName}/{ExternalExecutionId}}"
+    },
+    "inputArtifactDetails": {
+	"maximumCount": 0,
+	"minimumCount": 0
+    },
+    "outputArtifactDetails": {
+	"maximumCount": 0,
+	"minimumCount": 0
+    }
+}

@@ -1,0 +1,5 @@
+{
+  "category": "Deploy",
+  "provider": "Slack-Notifier",
+  "version": "1"
+}
