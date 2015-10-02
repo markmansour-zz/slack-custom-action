@@ -20,6 +20,7 @@ class SlackNotifierCustomAction
 
     cp.acknowledge_job(job_id: job.id, nonce: job.nonce)
 
+    # perform our important logic
     execution_id = dogbot_says_hi
 
     cp.put_job_success_result({
