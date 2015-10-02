@@ -1,0 +1,1 @@
+require 'slack_notifier_custom_action'
