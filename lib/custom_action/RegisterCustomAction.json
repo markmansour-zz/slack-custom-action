@@ -1,10 +1,10 @@
 {
     "category": "Deploy",
     "provider": "Slack-Notifier",
-    "version": "1",
+    "version": "2",
     "settings": {
 	"entityUrlTemplate": "https://codepipeline-demo.slack.com/messages/general/",
-	"executionUrlTemplate": "https://codepipeline-demo.slack.com/archives/general/{ExternalExecutionId}}"
+	"executionUrlTemplate": "https://codepipeline-demo.slack.com/archives/general/{ExternalExecutionId}"
     },
     "inputArtifactDetails": {
 	"maximumCount": 0,

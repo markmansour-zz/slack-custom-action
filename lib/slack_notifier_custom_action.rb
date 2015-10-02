@@ -7,7 +7,7 @@ class SlackNotifierCustomAction
           category: 'Deploy',
           owner: 'Custom',
           provider: 'Slack-Notifier',
-          version: '1'
+          version: '2'
         },
         max_batch_size: 1
       })
@@ -49,7 +49,7 @@ class SlackNotifierCustomAction
       icon_emoji: ":dog:", 
       username: "dogbot")
 
-    "q" + result["ts"].tr('.','')
+    "p" + result["ts"].tr('.', "")
   end
 
   def dog_says
