@@ -55,9 +55,13 @@ class SlackNotifierCustomAction
 
   def dog_says
     [
+      'Be the person your dog thinks you are',
+      "It's not the size of the dog in the fight, it's the size of the fight in the dog",
+      "People often say that motivation doesn't last.  Well, neither does bathing - that's why we recommend it daily",
+      "Outside of a dog, a book is man's best friend. Inside of a dog it's too dark to read.",
+      "If you pick up a starving dog and make him prosperous he will not bite you. This is the principal difference between a dog and man.",
       'woof',
-      'grrrrr',
-      'gotcha'
+      "The better I get to know men, the more I find myself loving dogs.",
     ].sample
   end
 end
