@@ -21,7 +21,7 @@ class SlackNotifierCustomAction
     cp.acknowledge_job(job_id: job.id, nonce: job.nonce)
 
     # perform our important logic
-    execution_id = dogbot_says_hi
+    execution_id = send_motivational_message_to_slack
 
     cp.put_job_success_result({
         job_id: job.id,
@@ -33,7 +33,7 @@ class SlackNotifierCustomAction
       })
   end
 
-  def dogbot_says_hi
+  def send_motivational_message_to_slack
     Slack.configure do |config|
       config.token = ENV['SLACK_API_TOKEN']
     end
